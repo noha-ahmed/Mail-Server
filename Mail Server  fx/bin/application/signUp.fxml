@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="bodybg2" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+   <children>
+      <AnchorPane layoutX="112.0" layoutY="79.0" prefHeight="427.0" prefWidth="568.0" styleClass="bodybg3">
+         <children>
+            <TextField fx:id="firstnameField" layoutX="309.0" layoutY="92.0" prefHeight="39.0" prefWidth="187.0" promptText="First Name" />
+            <Button layoutX="225.0" layoutY="298.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="39.0" prefWidth="98.0" text="submit" />
+            <ComboBox fx:id="gender" layoutX="65.0" layoutY="222.0" prefHeight="39.0" prefWidth="187.0" promptText="Gender" />
+            <TextField fx:id="emailField" layoutX="65.0" layoutY="92.0" prefHeight="39.0" prefWidth="187.0" promptText="Email" />
+            <DatePicker fx:id="date" layoutX="309.0" layoutY="222.0" prefHeight="39.0" prefWidth="187.0" promptText="Select BirthDate" />
+            <PasswordField fx:id="passwordField" layoutX="65.0" layoutY="158.0" prefHeight="39.0" prefWidth="187.0" promptText="password" />
+            <Button layoutX="25.0" layoutY="367.0" mnemonicParsing="false" onAction="#backToSignInPage" prefHeight="39.0" prefWidth="107.0" text="Back" />
+            <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" layoutX="181.0" layoutY="28.0" prefHeight="39.0" prefWidth="187.0" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastnameField" layoutX="309.0" layoutY="158.0" prefHeight="39.0" prefWidth="187.0" promptText="Last Name" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
